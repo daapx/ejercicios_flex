@@ -1,14 +1,19 @@
 .button{
     color: white;
-    font-family: $courier;
+    font-family: $font;
     background-color: $light-blue;
+    border: 0;
+    padding: .25em 1em;
 }
 
 .button--torquoise{
-    background-color: $turquesa
+    background-color: $turquoise;
 }
 
 .button--pink{
     background-color: $pink;
 }
 
+.button--xxl{
+    font-size: $xx-large;
+}
