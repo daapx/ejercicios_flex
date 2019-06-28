@@ -1,0 +1,38 @@
+nav{
+    width: 100vw;
+    height: 15vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid $gray;
+    box-sizing: border-box;
+
+    .nav__logo{
+        width: auto;
+        height: 10vh;
+        margin-left: 5vw;
+    }
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        margin-right: 3vw;
+    }
+
+    ul li{
+        padding: 0 2vw;
+    }
+
+    li a {
+        color: $black;
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+
+}

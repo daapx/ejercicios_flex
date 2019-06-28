@@ -1,0 +1,35 @@
+
+
+.container{
+    width: 90vw;
+    margin: 0 auto;
+
+    .container__row{
+        display: flex;
+        justify-content: space-evenly;
+        max-height: 30vh;
+        overflow: hidden;
+    }
+
+    .container__row:nth-child(3) .container__cell:nth-child(odd){
+        max-height: 15vh;
+        overflow: hidden;
+    }
+
+    .container__cell{
+        padding: 5px;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .container__cell--uno{
+        flex-grow: 1;
+    }
+
+    .container__cell--cuatro{
+        width: 25%;
+    }
+}

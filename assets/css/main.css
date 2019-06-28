@@ -358,19 +358,72 @@ body {
 .ejercicio_2 div.contenedor {
   display: flex;
   width: 80vw;
-  height: 40px;
+  height: 50px;
   justify-content: center;
   margin-top: 50px;
 }
 .ejercicio_2 div.contenedor input {
-  width: 80%;
+  border: 1px solid #979797;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+.ejercicio_2 div.contenedor button {
+  width: 100px;
   border: 1px solid #979797;
   box-sizing: border-box;
 }
-.ejercicio_2 div.contenedor button {
-  width: 70px;
-  border: 1px solid #979797;
-  box-sizing: border-box;
+
+.ejercicio_4 {
+  align-items: center;
+  justify-content: center;
+}
+.ejercicio_4 .banderas {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 60vw;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ejercicio_4 .banderas__item {
+  height: 40px;
+  margin: 1%;
+  background-color: pink;
+  color: #fff;
+  font-size: 20px;
+  flex-basis: 30%;
+  flex-shrink: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+.container .container__row {
+  display: flex;
+  justify-content: space-evenly;
+  max-height: 30vh;
+  overflow: hidden;
+}
+.container .container__row:nth-child(3) .container__cell:nth-child(odd) {
+  max-height: 15vh;
+  overflow: hidden;
+}
+.container .container__cell {
+  padding: 5px;
+}
+.container .container__cell img {
+  width: 100%;
+  height: auto;
+}
+.container .container__cell--uno {
+  flex-grow: 1;
+}
+.container .container__cell--cuatro {
+  width: 25%;
 }
 
 .button {
@@ -391,6 +444,38 @@ body {
 
 .button--xxl {
   font-size: 3rem;
+}
+
+nav {
+  width: 100vw;
+  height: 15vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #979797;
+  box-sizing: border-box;
+}
+nav .nav__logo {
+  width: auto;
+  height: 10vh;
+  margin-left: 5vw;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin-right: 3vw;
+}
+nav ul li {
+  padding: 0 2vw;
+}
+nav li a {
+  color: #000;
+  text-decoration: none;
+}
+nav li a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */
